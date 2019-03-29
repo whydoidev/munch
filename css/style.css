@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+  background-color: #d3e3eb;
+  color: #141618;
+  line-height: 1.5;
+  font-size: 16px;
+  /*set column width*/
+  width: 1100px;
+  margin: 0 auto 0;
+  font-family: "Georgia""Times New Roman", serif;
+}
+
+header {
+  text-align: center;
+  margin: 60px 0;
+}
+
+nav {
+  margin: 60px 0 0 0
+}
+
+/* apply styles to links (a tags) inside the nav */
+nav a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #141618;
+  /* remove underline from links */
+  text-decoration: none;
+  text-transform: uppercase;
+  /* padding makes room on the inside of the elements  */
+  padding: 0 40px 0 40px;
+}
+
+nav a:hover {
+  color: #fac600
+}
+
+section {
+  background-color: white;
+  margin-bottom: 0 0 0 40px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+div.post-content {
+  padding: 35px 240px;
+}
+
+/* This applies syles only to anchor tags inside div elements with a class of post content */
+div.post-content a {
+  color: #141618
+}
+
+div.post-content a:hover {
+  color: #fac600;
+}
+
+div.post-details {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #adadad;
+  /* add a line above the post details */
+  border-top: 2px solid #adadad;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+/* contact page style sheet */
+form div {
+  margin-bottom: 20px;
+}
+
+/* make the labels sit on top of the form fields */
+label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #b2b2b2;
+}
+
+input[type="email"], input[type="text"], textarea {
+  width: 100%;
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 18px;
+  outline-color: red;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+input [type="submit"] {
+  background-color: red;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* mobile styles */
+@media screen and (max-width: 1100px) {
+  body {
+    margin: 0 20px;
+    width: auto;
+  }
+
+  img, iframe {
+    max-width: 100%;
+  }
+
+  div.post-content {
+    padding: 35px;
+  }
+
+  header {
+    margin: 90px;
+  }
+
+  /* to make nav links stack */
+  nav a {
+    display: block;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    background-color: #ffffff
+  }
+}
+
+/* }media queiry ends here */
